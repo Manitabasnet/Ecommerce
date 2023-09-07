@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Electronic Gadgets</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<style >
+		.navbar{
+		width: 100%;
+
+
+		}
+		.navbar ul{
+			overflow: auto;
+		}
+		.navbar li{
+            float: left;
+			list-style: none;
+			margin: 20px 50px;
+		}
+		.navbar li a{
+			text-decoration: none;
+			color:forestgreen;
+		}
+
+		body{
+			background-image: url(Im/A.jpg);
+			background-size: 100% 100%;
+			
+		}
+		.container1{
+			width: 60%;
+			background-color: transparent;
+			margin: auto;
+			color: forestgreen;
+        	text-align: center;
+        	margin-top: 50px;
+        	padding: 10px 10px;
+         	box-shadow: 2px 2px 20px black;
+         	border-radius: 10px;
+         	margin-bottom: 30px;
+		}
+		.box{
+			border-radius: 4px;
+			border-style: none;
+			border-width: 2px;
+			border-color: green;
+		}
+		.container4{
+	        width: 100%;
+	        margin: auto;
+        }
+        .footer{
+	        padding: 70px 5px ;
+        }
+
+        .foot-menu h4{
+	       font-size: 15px;
+        }
+
+        .foot-menu ul{
+	       padding: 0;
+	       list-style: none;
+        }
+
+        .foot-menu{
+	       float: left;
+	       width: 20%;
+        }
+        .class{
+
+	       font-size: 15px;
+           color: black;
+           line-height: 26px;
+        }
+		
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="a.html">Product</a></li>
+			<li><a href="b.html">Blog</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+    </nav>
+    
+<div class="container1">
+	<h1>Contact us</h1>
+	<form name="contactForm" onsubmit="validateForm()">	
+		<p class="formdesign">First name <br> <input type="text" name="firstname"></p>
+		<p class="formdesign">Last name <br> <input type="text" name="lastname"></p><b></b>
+		<p class="formdesign">Phone number <br> <input type="text" name="phonenumber"></p>
+		<p>Gender: <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"checked> Female <input type="radio" name="gender" value="Others">Others</p>
+		<p class="text1">Message <br><textarea name="message" rows="12" cols="35" ></textarea></p>
+		<p><input class="button" type="submit" value="Submit"></p>
+	</form>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+		    <div class="footer1">
+				<h4>Company</h4>
+				<ul>
+                    <li><a href= "#">About us</a></li>
+					<li><a href= "#">Our services</a></li>
+					<li><a href= "#">Privacy Policy</a></li>
+					<li><a href= "#">Affiliate Program</a></li>
+					
+				</ul>
+		    </div>
+			<div class="footer1">
+				<h4>Get Help</h4>
+				<ul>
+                    <li><a href= "#">FAQ</a></li>
+					<li><a href= "#">Shipping</a></li>
+					<li><a href= "#">Return</a></li>
+					<li><a href= "#">Payment options</a></li>
+					
+				</ul>
+		    </div>
+			<div class="footer1">
+				<h4>Online Shop</h4>
+				<ul>
+                    <li><a href= "#">Mobile</a></li>
+					<li><a href= "#">Watch</a></li>
+					<li><a href= "#">Laptop</a></li>
+					<li><a href= "#">Headphone</a></li>
+					
+				</ul>
+		    </div>
+			<div class="footer1">
+				<h4>Follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>	
+				</div>
+				
+			
+		   </div>
+		</div>
+	</div>
+   </footer>
+  
+   <script>
+	function validateForm() {
+	   var fname = document.forms["contactForm"]["firstname"].value;
+	   var lname = document.forms["contactForm"]["lastname"].value;
+	   var phonenumber = document.forms["contactForm"]["phonenumber"].value;
+	   var gender= document.forms["contactForm"]["gender"].value;
+	   var message = document.forms["contactForm"]["message"].value;
+
+	   if (fname == ""|| lname == "" || phonenumber == "" || message == ""){
+		alert("Empty fields found.Please fill the form.")
+	   }
+	   else{
+		alert("We appericate the time you took to share your feedback.");
+	   }
+     }
+   </script>
+
+</body>
+</html>
+
